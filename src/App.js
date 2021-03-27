@@ -16,8 +16,6 @@ function App() {
   const [logInUser, setLogInUser] = useState({});
   return (
     <userContext.Provider value={[logInUser, setLogInUser]}>
-      <p>Email: {logInUser.email}</p>
-
       <Router>
         <Header />
         <Switch>

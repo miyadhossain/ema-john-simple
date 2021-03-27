@@ -66,7 +66,7 @@ export const handleSignOut = () => {
       console.log(err.message);
     });
 };
-// create user
+// sign up
 export const createUserWithEmailAndPassword = (name, email, password) => {
   return firebase
     .auth()
@@ -87,6 +87,7 @@ export const createUserWithEmailAndPassword = (name, email, password) => {
     });
 };
 
+// sign in
 export const signInWithEmailAndPassword = (email, password) => {
   return firebase
     .auth()
@@ -106,6 +107,7 @@ export const signInWithEmailAndPassword = (email, password) => {
     });
 };
 
+// update user
 const updateUserName = (name) => {
   const user = firebase.auth().currentUser;
 

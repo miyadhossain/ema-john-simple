@@ -33,7 +33,7 @@ function Login() {
     });
   };
 
-  // fg sign in
+  // fb sign in
   const fbSignIn = () => {
     handleFbSignIn().then((res) => {
       handleResponse(res, true);

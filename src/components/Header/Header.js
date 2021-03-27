@@ -6,6 +6,7 @@ import "./Header.css";
 
 const Header = () => {
   const [logInUser, setLogInUser] = useContext(userContext);
+  document.title = "Ema-John";
   return (
     <div className="header">
       <img src={logo} alt="" />

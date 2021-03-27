@@ -2,9 +2,9 @@ import React from "react";
 
 const Cart = (props) => {
   const cart = props.cart;
-  console.log(cart);
+  // console.log(cart);
   const prodPrice = cart.reduce(
-    (price, prod) => price + prod.price * prod.quantity,
+    (price, prod) => price + prod.price * prod.quantity || 1,
     0
   );
 
